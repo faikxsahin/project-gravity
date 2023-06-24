@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -20,9 +21,16 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             default:
-                Debug.Log("GAME OVER");
+                // Debug.Log("GAME OVER");
+                ReloadLevel();
                 break;
         }
+    }
+
+    void ReloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex); // Respawn to current active scene
     }
 
 }
