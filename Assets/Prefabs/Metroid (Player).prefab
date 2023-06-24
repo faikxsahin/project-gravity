@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 1177092311}
   - component: {fileID: 1177092309}
   - component: {fileID: 6577718167540519383}
+  - component: {fileID: 6577718167540519387}
   m_Layer: 0
   m_Name: Metroid (Player)
   m_TagString: Untagged
@@ -283,7 +284,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dbf8db7b5dfff4b7ca91acce243b8603, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -368,6 +369,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6577718167540519387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6577718166806404462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a72622166ac49a28cf980557fc6c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6577718167158818083
 GameObject:
   m_ObjectHideFlags: 0
