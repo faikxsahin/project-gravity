@@ -5,11 +5,12 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-    Rigidbody rigidBody;
-    AudioSource audioSource;
-
     [SerializeField] float mainThrust = 1500f;
     [SerializeField] float rotationThrust = 100f;
+    [SerializeField] AudioClip metroidEngine;
+
+    Rigidbody rigidBody;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class Movement : MonoBehaviour
 
             if (!audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(metroidEngine);
             }
         }
         else
