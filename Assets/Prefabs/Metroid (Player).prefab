@@ -273,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainThrust: 1500
   rotationThrust: 100
+  metroidEngine: {fileID: 8300000, guid: dbf8db7b5dfff4b7ca91acce243b8603, type: 3}
 --- !u!82 &6577718167540519383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -283,7 +284,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dbf8db7b5dfff4b7ca91acce243b8603, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -382,6 +383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
+  success: {fileID: 8300000, guid: 8e7ba2407e32c46f7a56e9c2b5abbdf0, type: 3}
+  crash: {fileID: 8300000, guid: 83f83e2c90f724be793f49c8fd446787, type: 3}
 --- !u!1 &6577718167158818083
 GameObject:
   m_ObjectHideFlags: 0

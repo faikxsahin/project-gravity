@@ -523,10 +523,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1177092309, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
-      propertyPath: metroidEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: dbf8db7b5dfff4b7ca91acce243b8603, type: 3}
     - target: {fileID: 6577718166806404457, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -575,22 +571,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Metroid (Player)
       objectReference: {fileID: 0}
-    - target: {fileID: 6577718167540519383, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6577718167540519387, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
-      propertyPath: crash
-      value: 
-      objectReference: {fileID: 8300000, guid: 83f83e2c90f724be793f49c8fd446787, type: 3}
-    - target: {fileID: 6577718167540519387, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
-      propertyPath: success
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e7ba2407e32c46f7a56e9c2b5abbdf0, type: 3}
-    - target: {fileID: 6577718167540519387, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
-      propertyPath: deathExplosion
-      value: 
-      objectReference: {fileID: 8300000, guid: 83f83e2c90f724be793f49c8fd446787, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81018544f4ae7489681e9fa5f6cd1141, type: 3}
 --- !u!1001 &7987253034551894613
