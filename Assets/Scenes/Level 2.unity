@@ -272,8 +272,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8216575588134731333, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+      propertyPath: crashParticles
+      value: 
+      objectReference: {fileID: 911155795}
+    - target: {fileID: 8216575588134731333, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+      propertyPath: successParticles
+      value: 
+      objectReference: {fileID: 911155796}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+--- !u!198 &911155795 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4576333328635966119, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+  m_PrefabInstance: {fileID: 911155794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &911155796 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4442201325591571098, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+  m_PrefabInstance: {fileID: 911155794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
