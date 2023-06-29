@@ -8,6 +8,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 1500f;
     [SerializeField] float rotationThrust = 100f;
     [SerializeField] AudioClip metroidEngine;
+    [SerializeField] ParticleSystem mainThrusterParticle;
+    [SerializeField] ParticleSystem rightThrusterParticle;
+    [SerializeField] ParticleSystem leftThrusterParticle;
 
     Rigidbody rigidBody;
     AudioSource audioSource;
@@ -37,10 +40,16 @@ public class Movement : MonoBehaviour
             {
                 audioSource.PlayOneShot(metroidEngine);
             }
+
+            if (!mainThrusterParticle.isPlaying)
+            {
+                mainThrusterParticle.Play();
+            }
         }
         else
         {
             audioSource.Stop();
+            mainThrusterParticle.Stop();
         }
     }
 
@@ -50,11 +59,26 @@ public class Movement : MonoBehaviour
         {
             // Debug.Log("Pressed A - Rotating Left");
             ApplyRotation(rotationThrust);
+
+            if (!rightThrusterParticle.isPlaying)
+            {
+                rightThrusterParticle.Play();
+            }
         }
         else if (Input.GetKey(KeyCode.D))
         {
             // Debug.Log("Pressed D - Rotating Right");
             ApplyRotation(-rotationThrust);
+
+            if (!leftThrusterParticle.isPlaying)
+            {
+                leftThrusterParticle.Play();
+            }
+        }
+        else
+        {
+            rightThrusterParticle.Stop();
+            leftThrusterParticle.Stop();
         }
     }
 
