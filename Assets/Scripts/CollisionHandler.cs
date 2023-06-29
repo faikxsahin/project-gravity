@@ -9,19 +9,37 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] AudioClip crashAudio;
     [SerializeField] ParticleSystem successParticles;
     [SerializeField] ParticleSystem crashParticles;
-    
-    AudioSource audioSource;
-    
-    bool isTransitioning = false;
 
-    void Start() 
+    AudioSource audioSource;
+
+    bool isTransitioning = false;
+    bool collisionDisabled = false;
+
+    void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        RespondToDebugKeys();
+    }
+
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled; // Toggle collision
+        }
+    }
+
     void OnCollisionEnter(Collision other)
     {
-        if (isTransitioning) { return; } // Prevents extra SFX error
+        if (isTransitioning || collisionDisabled) { return; } // Prevents extra SFX error
 
         switch (other.gameObject.tag)
         {

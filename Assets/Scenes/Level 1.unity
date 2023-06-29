@@ -466,6 +466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1113090417, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1670064413287501349, guid: f45b2b6d3fe9247b9a88ea51fb903bef, type: 3}
       propertyPath: m_Name
       value: Metroid (Player)
