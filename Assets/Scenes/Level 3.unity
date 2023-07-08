@@ -587,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 0, z: -10}
   movementFactor: 0
-  period: 2
+  period: 4
 --- !u!1 &526973990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4503295648002678178, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 0, z: -10}
   movementFactor: 0
-  period: 2
+  period: 4.5
 --- !u!1001 &565398688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 0, z: -10}
   movementFactor: 0
-  period: 2
+  period: 5
 --- !u!1001 &883426751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1303,7 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4849695691529595746, guid: c4a7b2a9dc60e4c6fa656bb165970ae0, type: 3}
       propertyPath: m_LocalRotation.w
